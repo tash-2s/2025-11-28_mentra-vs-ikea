@@ -8,5 +8,10 @@
   },
   "peerDependencies": {
     "typescript": "^5"
+  },
+  "dependencies": {
+    "@mentra/sdk": "^2.1.28",
+    "openai": "^6.9.1",
+    "prettier": "^3.7.1"
   }
 }
