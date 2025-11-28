@@ -15,7 +15,7 @@
   "tools": [
     {
       "id": "process_assembly_input",
-      "description": "Always call this tool directly whenever the user is talking about assembly, and in all subsequent messages related to it. This specialized tool independently interprets the user's request and manages the assembly workflow, so your only task is to pass the user's message to this tool and answer the user based on its output. To best guide the user, your answer may be longer than usual. You should not analyze photos or perform additional reasoning, as this is unnecessary. Example user messages include, but are not limited to: \"could you help me assemble this?\", \"something like this?\", and \"what's my next step?\"",
+      "description": "Always call this tool directly whenever the user is talking about assembly, and in all subsequent messages related to it. This specialized tool independently interprets the user's request and manages the assembly workflow, so your only task is to pass the user's message to this tool, then return the tool’s output to the user as the \"Final Answer.\" To best guide the user, your answer may be longer than usual. You should not analyze photos or perform additional reasoning, as this is unnecessary. Example user messages include, but are not limited to: \"could you help me assemble this?\", \"something like this?\", and \"what's my next step?\"",
       "activationPhrases": [],
       "parameters": {
         "user_message": {
