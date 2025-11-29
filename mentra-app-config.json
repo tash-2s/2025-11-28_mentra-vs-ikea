@@ -15,7 +15,7 @@
   "tools": [
     {
       "id": "process_assembly_input",
-      "description": "Always call this tool directly whenever the user is talking about assembly, and in all subsequent messages related to it. This specialized tool independently interprets the user's request and manages the assembly workflow, so your only task is to pass the user's message to this tool, then return the tool's output to the user as the \"Final Answer:\". To best guide the user, your answer may be longer than usual. You should not analyze photos or perform additional reasoning, as this is unnecessary. You don't need a camera. (\"Needs Camera: false\"). Example user messages include, but are not limited to: \"could you help me assemble this?\", \"something like this?\", and \"what's my next step?\"",
+      "description": "Always call this tool directly whenever the user is talking about assembly, and in all subsequent messages related to it. This specialized tool independently interprets the user's request and manages the assembly workflow, so your only task is to pass the user's message to this tool and then return the tool's output to the user after the \"Final Answer:\" marker. You MUST use the tool's output exactly as provided for the Final Answer, even if it is long, because the user does not see the tool's output and needs all of this information. You should not analyze photos or perform additional reasoning, as this is unnecessary. You don't need a camera. (\"Needs Camera: false\"). Example user messages include, but are not limited to: \"could you help me assemble this?\", \"something like this?\", and \"what's my next step?\"",
       "activationPhrases": [],
       "parameters": {
         "user_message": {
